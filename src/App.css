@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/1200px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg");
+}
+
+.header {
+  color: #000;
+}
+
+.card {
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+  color: #000;
+}
+
+.card:hover {
+  transform: scale(1.1); /* Slightly enlarge the card on hover */
+}
+
+.card:active {
+  background-color: #800020; /* Even darker red when clicked */
+  transform: scale(0.95); /* Slightly shrink the button when clicked */
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.card h2 {
+  margin: 20px 0;
+}
+
+.card.easy {
+  background-color: #d4edda;
+}
+
+.card.medium {
+  background-color: #fff3cd;
+}
+
+.card.hard {
+  background-color: #f8d7da;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: #000;
+  transform: scale(0.95);
+}
